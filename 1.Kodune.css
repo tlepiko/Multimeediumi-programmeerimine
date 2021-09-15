@@ -1,0 +1,276 @@
+#actionarea {
+    height: 700px;
+    width: 1200px;
+    background-color: rgb(235, 235, 202);
+    position: absolute;
+    overflow: hidden;
+}
+
+#actionarea * {
+    position: absolute;
+}
+
+#conveyerbelt {
+    top: 550px;
+    width: 1200px;
+    height: 100px;
+    background-color: gray;
+}
+
+#conveyerbeltgear1 {
+    width: 75px;
+    height: 75px;
+    top: 12.5px;
+    border-radius: 50%;
+    background-color: rgb(107, 110, 126);
+}
+
+#conveyerbeltgear2 {
+    width: 75px;
+    height: 75px;
+    top: 12.5px;
+    left: 1125px;
+    border-radius: 50%;
+    background-color: rgb(107, 110, 126);
+}
+
+#stripe1 {
+    height: 75px;
+    width: 10px;
+    left: 32.5px;
+    background-color: rgb(8, 8, 8);
+}
+
+#stripe2 {
+    height: 10px;
+    width: 75px;
+    top: 32.5px;
+    background-color: rgb(8, 8, 8);
+}
+
+#smile {
+    width: 25px; 
+    height: 10px;  
+    border: solid 5px #000;
+    border-color: #000 transparent transparent transparent;
+    border-radius: 50%/10px 10px 0 0;
+    top: 295px;
+    left: 33.5px;
+    transform: rotateZ(180deg);
+}
+
+#leye {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    top: 305px;
+    left: 45.5px;
+}
+
+#reye {
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    top: 305px;
+    left: 45.5px;
+}
+
+#stickman {
+    top: 350px;
+    left: 1250px;
+}
+
+#machine1 {
+    left: 600px;
+}
+
+#machine1pipe {
+    background-color: gray;
+    height: 200px;
+    width: 100px;
+}
+#machine1hand {
+    background-color: gray;
+    height: 300px;
+    width: 15px;
+    left: 43px;
+}
+
+#machine2 {
+    left: 300px;
+}
+
+#machine3{
+    left: 900px;
+}
+
+#machine1tip {
+    width: 0; 
+    height: 0; 
+    border-left: 7.5px solid transparent;
+    border-right: 7.5px solid transparent;
+    border-top: 15px solid #f00;
+    top: 299px;
+    left: 43px;
+}
+
+#head {
+    border-radius: 50px;
+    background-color: teal;
+    width: 50px;
+    height: 50px;
+}
+
+#torso {
+    height: 100px;
+    width: 15px;
+    background-color: teal;
+    top: 49px;
+    left: 18px;
+}
+
+#rhand {
+    height: 60px;
+    width: 10px;
+    background-color: teal;
+    transform: rotate(45deg);
+    top: 60px;
+    left: -5px;
+}
+
+#lhand {
+    height: 60px;
+    width: 10px;
+    background-color: teal;
+    transform: rotate(-45deg);
+    top: 60px;
+    left: 45px;
+}
+
+#rleg {
+    height: 60px;
+    width: 10px;
+    background-color: teal;
+    transform: rotate(20deg);
+    top: 140px;
+    left: 10px;
+}
+
+#lleg {
+    height: 60px;
+    width: 10px;
+    background-color: teal;
+    transform: rotate(-20deg);
+    top: 140px;
+    left: 30px;
+}
+
+#leyeface {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    top: 15px;
+    left: 10px;
+    visibility: hidden;
+}
+
+#reyeface {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    top: 15px;
+    left: 30px;
+    visibility: hidden;
+}
+
+#smileface {
+    width: 25px; 
+    height: 10px;  
+    border: solid 5px #000;
+    border-color: #000 transparent transparent transparent;
+    border-radius: 50%/10px 10px 0 0;
+    top: 20px;
+    left: 7.5px;
+    transform: rotateZ(180deg);
+    visibility: hidden;
+}
+
+@keyframes moveStick1 {
+    0% {transform: translateX(0px);}
+    100% {transform: translateX(-325px);}
+}
+
+@keyframes moveStick2 {
+    0% {transform: translateX(-325px);}
+    100% {transform: translateX(-625px);}
+}
+
+@keyframes moveStick3 {
+    0% {transform: translateX(-625px);}
+    100% {transform: translateX(-925px);}
+}
+
+@keyframes moveStick4 {
+    0% {transform: translateX(-925px);}
+    100% {transform: translateX(-1325px);}
+}
+
+@keyframes machine3print {
+    0% {transform: translateY(0px);}
+    30% {transform: translateY(-50px);}
+    80% {transform: translateY(75px);}
+    100% {transform: translateY(0px);}
+}
+
+@keyframes machine3print2 {
+    0% {transform: translateY(0px);}
+    30% {transform: translateY(-50px);}
+    50% {transform: translateX(-10px);}
+    80% {transform: translateY(60px) translateX(-10px);}
+    100% {transform: translateY(0px);}
+}
+
+@keyframes machine3print3 {
+    0% {transform: translateY(0px);}
+    30% {transform: translateY(-50px);}
+    50% {transform: translateX(10px);}
+    80% {transform: translateY(60px) translateX(10px);}
+    100% {transform: translateY(0px);}
+}
+
+@keyframes conveyergearmovement {
+    0% {transform: rotateZ(0deg);}
+    100% {transform: rotateZ(-360deg);}
+}
+
+@keyframes mouthvisible {
+    99% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+}
+
+@keyframes leyevisible {
+    99% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+}
+
+@keyframes reyevisible {
+    99% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+}
